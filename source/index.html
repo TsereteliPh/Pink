@@ -10,21 +10,24 @@
       <h1 class="visually-hidden">Сайт для размещения и редактирования фотографий - Pink</h1>
 
       <div class="header__wrapper">
-        <img class="header__logo" src="#" alt="Логотип сайта">
+        <div class="header__panel">
+          <img class="header__logo" src="#" alt="Логотип сайта">
 
-        <button class="header__button burger-button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+          <button class="header__button burger-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
 
         <nav class="header__navigation nav">
           <a class="nav__link nav__link--current">Главная</a>
-          <a href="./photo.html" class="nav__link">Фотографии</a>
-          <a href="./form.html" class="nav__link">Конкурс</a>
-          <a href="https://htmlacademy.ru" class="nav__link" target="_blank">Html academy</a>
+          <a class="nav__link" href="./photo.html">Фотографии</a>
+          <a class="nav__link" href="./form.html">Конкурс</a>
         </nav>
       </div>
 
       <h2 class="header__caption">Взгляните на жизнь иначе!</h2>
+
+      <img class="header__image" src="#" alt="Изображение смартфона с примером обработки фотографии">
 
       <div class="header__store store">
         <h2 class="store__caption">Взгляните на жизнь иначе!</h2>
@@ -56,7 +59,7 @@
       <section class="features">
         <div class="features__wrapper">
           <div class="features__item benefit">
-            <img class="benefit__pic" src="#" alt="Пример обработки фотографии">
+            <img class="benefit__pic" src="#" alt="Черно-белое фото, без обработки">
 
             <h3 class="benefit__caption">Поднимает настроение</h3>
 
@@ -66,7 +69,7 @@
           </div>
 
           <div class="features__item benefit">
-            <img class="benefit__pic" src="#" alt="Пример обработки фотографии">
+            <img class="benefit__pic" src="#" alt="Пример обработки фото с розовым фильтром">
 
             <h3 class="benefit__caption">Меняет мир вокруг</h3>
 
@@ -76,7 +79,7 @@
           </div>
 
           <div class="features__item benefit">
-            <img class="benefit__pic" src="#" alt="Пример обработки фотографии">
+            <img class="benefit__pic" src="#" alt="Пример обработки фото с розовым фильтром и текстом">
 
             <h3 class="benefit__caption">Заводит новых друзей</h3>
 
@@ -106,127 +109,215 @@
       </section>
 
       <section class="reviews">
-        <blockquote class="reviews__wrapper reviews-slider">
-          <cite class="reviews__author reviews-slider__author">Николай Петров</cite>
+        <img class="reviews__image" src="#" alt="Кавычки">
 
-          <p class="reviews__message reviews-slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
+        <div class="reviews__wrapper">
+          <button class="reviews__button reviews__button--left" type="button"></button>
 
-        <blockquote class="reviews__wrapper reviews-slider">
-          <cite class="reviews__author reviews-slider__author">Николай Петров</cite>
+          <div class="reviews-slider">
+            <blockquote class="reviews-slider__box">
+              <cite class="reviews-slider__author-mobile">Николай Петров</cite>
 
-          <p class="reviews__message reviews-slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
+              <p class="reviews-slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 
-        <blockquote class="reviews__wrapper reviews-slider">
-          <cite class="reviews__author reviews-slider__author">Николай Петров</cite>
+              <div class="reviews-slider__author">
+                <cite class="reviews-slider__author-name">Николай Петров</cite>
+                <span class="reviews-slider__author-about">25 лет, водитель трамвая</span>
+              </div>
+            </blockquote>
 
-          <p class="reviews__message reviews-slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
+            <blockquote class="reviews-slider__box">
+              <cite class="reviews-slider__author-mobile">Николай Петров</cite>
 
-        <div class="reviews__controls dots">
-          <span class="dots__item dots__item--active"></span>
-          <span class="dots__item"></span>
-          <span class="dots__item"></span>
+              <p class="reviews-slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+
+              <div class="reviews-slider__author">
+                <cite class="reviews-slider__author-name">Николай Петров</cite>
+                <span class="reviews-slider__author-about">25 лет, водитель трамвая</span>
+              </div>
+            </blockquote>
+
+            <blockquote class="reviews-slider__box">
+              <cite class="reviews-slider__author-mobile">Николай Петров</cite>
+
+              <p class="reviews-slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+
+              <div class="reviews-slider__author">
+                <cite class="reviews-slider__author-name">Николай Петров</cite>
+                <span class="reviews-slider__author-about">25 лет, водитель трамвая</span>
+              </div>
+            </blockquote>
+          </div>
+
+          <button class="reviews__button reviews__button--right" type="button"></button>
+        </div>
+
+        <div class="reviews__controls reviews-dots">
+          <span class="reviews-dots__item reviews-dots__item--active"></span>
+          <span class="reviews-dots__item"></span>
+          <span class="reviews-dots__item"></span>
         </div>
       </section>
 
       <section class="price">
         <div class="price__wrapper">
-          <table class="price__table price-table">
-            <thead class="price-table__header">
+          <table class="price__table table">
+            <thead class="table__header">
               <tr>
-                <th class="price-table__header-cell price-table__header-cell--transparent">
+                <th class="table__header-cell table__header-cell--transparent">
                 </th>
 
-                <th class="price-table__header-cell">
-                  <span class="price-table__caption">База</span>
-                  <span class="price-table__price">1,99 Usd</span>
+                <th class="table__header-cell">
+                  <span class="table__caption">База</span>
+                  <span class="table__price">1,99 Usd</span>
                 </th>
 
-                <th class="price-table__header-cell">
-                  <span class="price-table__caption">Стандарт</span>
-                  <span class="price-table__price">3,99 Usd</span>
+                <th class="table__header-cell">
+                  <span class="table__caption">Стандарт</span>
+                  <span class="table__price">3,99 Usd</span>
                 </th>
 
-                <th class="price-table__header-cell">
-                  <span class="price-table__caption">Анлим</span>
-                  <span class="price-table__price">9,99 Usd</span>
+                <th class="table__header-cell">
+                  <span class="table__caption">Анлим</span>
+                  <span class="table__price">9,99 Usd</span>
                 </th>
               </tr>
             </thead>
 
-            <tbody class="price-table__body">
+            <tbody class="table__body">
               <tr>
-                <td class="price-table__body-cell price-table__body-cell--hidden">
-                  <span class="price-table__option">Розовый фильтр</span>
+                <td class="table__body-cell">
+                  <span class="table__option">Розовый фильтр</span>
                 </td>
 
-                <td class="price-table__body-cell">
-                  <span class="price-table__icon-pink-filter
-                               price-table__icon-pink-filter--check"></span>
+                <td class="table__body-cell">
+                  <span class="table__icon table__icon--check"></span>
                 </td>
 
-                <td class="price-table__body-cell">
-                  <span class="price-table__icon-pink-filter
-                               price-table__icon-pink-filter--check"></span>
+                <td class="table__body-cell">
+                  <span class="table__icon-pink-filter
+                               table__icon-pink-filter--check"></span>
                 </td>
 
-                <td class="price-table__body-cell">
-                  <span class="price-table__icon-pink-filter
-                               price-table__icon-pink-filter--check"></span>
+                <td class="table__body-cell">
+                  <span class="table__icon-pink-filter
+                               table__icon-pink-filter--check"></span>
                 </td>
               </tr>
 
               <tr>
-                <td class="price-table__body-cell price-table__body-cell--hidden">
-                  <span class="price-table__option">Смайлики</span>
+                <td class="table__body-cell">
+                  <span class="table__option">Смайлики</span>
                 </td>
 
-                <td class="price-table__body-cell">
-                  <span class="price-table__icon-emoji
-                               price-table__icon-emoji--cross"></span>
+                <td class="table__body-cell">
+                  <span class="table__icon table__icon--cross"></span>
                 </td>
 
-                <td class="price-table__body-cell">
-                  <span class="price-table__icon-emoji
-                               price-table__icon-emoji--check"></span>
+                <td class="table__body-cell">
+                  <span class="table__icon table__icon--check"></span>
                 </td>
 
-                <td class="price-table__body-cell">
-                  <span class="price-table__icon-emoji
-                               price-table__icon-emoji--check"></span>
+                <td class="table__body-cell">
+                  <span class="table__icon table__icon--check"></span>
                 </td>
               </tr>
 
               <tr>
-                <td class="price-table__body-cell price-table__body-cell--hidden">
-                  <span class="price-table__option">Комментарии</span>
+                <td class="table__body-cell">
+                  <span class="table__option">Комментарии</span>
                 </td>
 
-                <td class="price-table__body-cell">
-                  <span class="price-table__icon-comments
-                               price-table__icon-comments--cross"></span>
+                <td class="table__body-cell">
+                  <span class="table__icon table__icon--cross"></span>
                 </td>
 
-                <td class="price-table__body-cell">
-                  <span class="price-table__icon-comments
-                               price-table__icon-comments--cross"></span>
+                <td class="table__body-cell">
+                  <span class="table__icon table__icon--cross"></span>
                 </td>
 
-                <td class="price-table__body-cell">
-                  <span class="price-table__icon-comments
-                               price-table__icon-comments--check"></span>
+                <td class="table__body-cell">
+                  <span class="table__icon table__icon--check"></span>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="price__controls dots">
-          <span class="dots__item dots__item"></span>
-          <span class="dots__item dots__item--active"></span>
-          <span class="dots__item"></span>
+        <div class="price__mobile-wrapper">
+          <div class="price__slider price-slider">
+            <ul class="price-slider__list">
+              <li class="price-slider__item price-slider__item--heading">
+                <p class="price-slider__caption">База</p>
+                <p class="price-slider__price">1,99 Usd</p>
+              </li>
+
+              <li class="price-slider__item">
+                <span class="price-slider__option">Розовый фильтр</span>
+                <span class="price-slider__status price-slider__status--check"></span>
+              </li>
+
+              <li class="price-slider__item">
+                <span class="price-slider__option">Смайлики</span>
+                <span class="price-slider__status price-slider__status--cross"></span>
+              </li>
+              
+              <li class="price-slider__item">
+                <span class="price-slider__option">Комментарии</span>
+                <span class="price-slider__status price-slider__status--cross"></span>
+              </li>
+            </ul>
+
+            <ul class="price-slider__list price-slider__list--active js-active">
+              <li class="price-slider__item price-slider__item--heading">
+                <p class="price-slider__caption">Стандарт</p>
+                <p class="price-slider__price">3,99 Usd</p>
+              </li>
+
+              <li class="price-slider__item">
+                <span class="price-slider__option">Розовый фильтр</span>
+                <span class="price-slider__status price-slider__status--check"></span>
+              </li>
+
+              <li class="price-slider__item">
+                <span class="price-slider__option">Смайлики</span>
+                <span class="price-slider__status price-slider__status--check"></span>
+              </li>
+              
+              <li class="price-slider__item">
+                <span class="price-slider__option">Комментарии</span>
+                <span class="price-slider__status price-slider__status--cross"></span>
+              </li>
+            </ul>
+
+            <ul class="price-slider__list">
+              <li class="price-slider__item price-slider__item--heading">
+                <p class="price-slider__caption">Анлим</p>
+                <span class="price-slider__price">9,99 Usd</p>
+              </li>
+
+              <li class="price-slider__item">
+                <span class="price-slider__option">Розовый фильтр</span>
+                <span class="price-slider__status price-slider__status--check"></span>
+              </li>
+
+              <li class="price-slider__item">
+                <span class="price-slider__option">Смайлики</span>
+                <span class="price-slider__status price-slider__status--check"></span>
+              </li>
+              
+              <li class="price-slider__item">
+                <span class="price-slider__option">Комментарии</span>
+                <span class="price-slider__status price-slider__status--check"></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price__controls price-dots">
+            <span class="price-dots__item"></span>
+            <span class="price-dots__item price-dots__item--active js-active"></span>
+            <span class="price-dots__item"></span>
+          </div>
         </div>
       </section>
 
