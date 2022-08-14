@@ -1,32 +1,75 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink</title>
   </head>
 
-  <body>
-    <header>
-      <a href="./idex.html" class="header__logo" >
-        <img src="#" alt="Логотип сайта">
-      </a>
+  <body class="page__body">
+    <header class="header">
+      <h1 class="visually-hidden">Сайт для размещения и редактирования фотографий - Pink</h1>
 
-      <button class="header__button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="header__wrapper">
+        <div class="header__panel">
+          <div class="header__logos">
+            <img class="header__logo header__logo--mobile" src="#" alt="Логотип сайта">
+            <img class="header__logo header__logo--tablet" src="#" alt="Логотип сайта">
+            <img class="header__logo header__logo--desktop" src="#" alt="Логотип сайта">
+          </div>
 
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--current">Фотографии</a></li>
-          <li class="nav__item"><a href="./form.html" class="nav__link">Конкурс</a></li>
-          <li class="nav__item"><a href="https://htmlacademy.ru" class="nav__link" target="_blank">Html academy</a></li>
-        </ul>
-      </nav>
+          <button class="header__button js-burger-btn" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <nav class="header__navigation nav">
+          <a class="nav__link nav__link--current">Главная</a>
+          <a class="nav__link" href="./photo.html">Фотографии</a>
+          <a class="nav__link" href="./form.html">Конкурс</a>
+        </nav>
+      </div>
+
+      <h2 class="header__caption">
+        Фотографии<br>
+        пользователей
+      </h2>
     </header>
 
-    <main>
-      
+    <main class="page__main">
+      <section class="top-message">
+        <div class="top-message__wrapper">
+          <p class="top-message__content">
+            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__wrapper">
+          <ul class="gallery__list">
+            <li class="gallery__item card">
+              <img class="card__image" src="#" alt="Панорама подвесного моста">
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Анна
+                  <span class="card__time">(5 минут назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+
+                <p class="card__likes">
+                  Нравится:
+                  <span class="card__likes-counter">215</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer>
