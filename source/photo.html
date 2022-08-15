@@ -24,8 +24,8 @@
         </div>
 
         <nav class="header__navigation nav">
-          <a class="nav__link nav__link--current">Главная</a>
-          <a class="nav__link" href="./photo.html">Фотографии</a>
+          <a class="nav__link" href="./index.html">Главная</a>
+          <a class="nav__link nav__link--current">Фотографии</a>
           <a class="nav__link" href="./form.html">Конкурс</a>
         </nav>
       </div>
@@ -48,8 +48,8 @@
       <section class="gallery">
         <div class="gallery__wrapper">
           <ul class="gallery__list">
-            <li class="gallery__item card">
-              <img class="card__image" src="#" alt="Панорама подвесного моста">
+            <li class="gallery__item card card--header">
+              <img class="card__image card__image--header" src="#" alt="Панорама подвесного моста">
 
               <div class="card__info-container">
                 <p class="card__author">
@@ -67,13 +67,186 @@
                 </p>
               </div>
             </li>
+
+            <li class="gallery__item card">
+              <img class="card__image" src="#" alt="Фотография со съемок машины">
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Левон
+                  <span class="card__time">(5 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+
+                <p class="card__likes">
+                  Нравится:
+                  <span class="card__likes-counter">356</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <img class="card__image" src="#" alt="Фотография ударной установки">
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Антон
+                  <span class="card__time">(12 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Соседи будут рады!
+                </p>
+
+                <p class="card__likes">
+                  Нравится:
+                  <span class="card__likes-counter">666</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <img class="card__image" src="#" alt="Фотография вида из окна на небо">
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Борис
+                  <span class="card__time">(20 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+
+                <p class="card__likes">
+                  Нравится:
+                  <span class="card__likes-counter">167</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <img class="card__image" src="#" alt="Фотография Кубанской бахчи">
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Сергей
+                  <span class="card__time">(25 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Самая кубанская в мире!
+                </p>
+
+                <p class="card__likes">
+                  Нравится:
+                  <span class="card__likes-counter">4</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <img class="card__image" src="#" alt="Фотография ног на фоне обрыва">
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Максим
+                  <span class="card__time">(40 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Где снег-то?
+                </p>
+
+                <p class="card__likes">
+                  Нравится:
+                  <span class="card__likes-counter">150</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <img class="card__image" src="#" alt="Фотография крыла самолета">
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Надежда
+                  <span class="card__time">(45 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Всем GM и взаимные лайки!
+                </p>
+
+                <p class="card__likes">
+                  Нравится:
+                  <span class="card__likes-counter">2560</span>
+                </p>
+              </div>
+            </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="main-message">
+        <p class="main-message__text">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </section>
+
+      <section class="editor">
+        <div class="editor__wrapper">
+          <img class="editor__image" src="#" alt="Фотография загруженная пользователем">
+
+          <form class="editor__form form" method="???">
+            <div class="form__control-panel">
+              <button class="form__control-btn form__control-btn--crop js-active" type="button"></button>
+              
+              <button class="form__control-btn form__control-btn--fill" type="button"></button>
+              
+              <button class="form__control-btn form__control-btn--contrast" type="button"></button>
+            </div>
+
+            <div class="form__range-wrapper">
+              <input class="form__range form__range--crop js-active" type="range" form="0" to="100" step="1" value="0">
+
+              <input class="form__range form__range--fill" type="range" form="0" to="100" step="1" value="50">
+
+              <input class="form__range form__range--contrast" type="range" form="0" to="100" step="1" value="50">
+            </div>
+
+            <div class="form__send-panel">
+              <button class="button form__button form__button--send" type="submit"></button>
+              
+              <button class="button form__button form__button--reset" type="reset"></button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
 
-    <footer>
-      
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo" href="./index.html">
+          <img class="footer__logo-pic" src="#" alt="Логотип Pink">
+        </a>
+
+        <div class="footer__socials socials">
+          <span class="socials__icon socials__icon--twitter"></span>
+          <span class="socials__icon socials__icon--facebook"></span>
+          <span class="socials__icon socials__icon--youtube"></span>
+        </div>
+
+        <div class="footer__developer dev">
+          <a href="" class="dev__text">Разработано
+            <span class="dev__icon"></span>
+          </a>
+        </div>
+      </div> 
     </footer>
   </body>
 </html>
