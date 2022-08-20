@@ -1,0 +1,1 @@
+let cock = document.querySelector('.header__button');
