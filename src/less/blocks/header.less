@@ -11,6 +11,7 @@
     @media (min-width: @tablet-width) {
         background-image: url('../img/bg-back-tablet@1x.jpg');
         background-size: cover;
+        background-position: center 0;
 
         @media (min-resolution: 2dppx) {
             background-image: url('../img/bg-back-tablet@2x.jpg');
@@ -32,9 +33,10 @@
 .header__bg-wrapper {
     position: relative;
 
-    @media (max-width: @tablet-width) {
+    @media (max-width: calc(@tablet-width - 1px)) {
         background-image: url('../img/bg-back-mobile@1x.jpg');
         background-size: cover;
+        background-position: center 0;
 
         @media (min-resolution: 2dppx) {
             background-image: url('../img/bg-back-mobile@2x.jpg');
@@ -93,7 +95,7 @@
     width: 74px;
     height: 23px;
 
-    @media (max-width: @tablet-width) {
+    @media (max-width: calc(@tablet-width - 1px)) {
         margin-top: 10px; 
     }
 
@@ -231,7 +233,7 @@
 .header__caption {
     display: none;
     
-    @media (max-width: @tablet-width) {
+    @media (max-width: calc(@tablet-width - 1px)) {
         display: block;
         margin-top: 20px;
         margin-bottom: 35px;
@@ -244,8 +246,8 @@
 }
 
 .header__image {
-    margin-left: 10%;
-    margin-bottom: -10px;
+    display: block;
+    margin: 0 auto -10px;
 
     @media (min-width: @tablet-width) {
         display: none;
@@ -268,6 +270,11 @@
 
         background-color: transparent;
     }
+
+    @media (min-width: @desktop-width) {
+        left: 9vw;
+        bottom: 100px;
+    }
 }
 
 .store__caption {
@@ -280,8 +287,15 @@
     line-height: 120%;
     text-align: center;
 
-    @media (max-width: @tablet-width) {
+    @media (max-width: calc(@tablet-width - 1px)) {
         display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 50px;
+
+        font-size: 50px;
+        line-height: 135%;
     }
 }
 
@@ -313,6 +327,10 @@
     @media (min-width: @tablet-width) {
         margin-bottom: 45px;
     }
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 75px;
+    }
 }
 
 .store__icons {
@@ -327,6 +345,10 @@
 
     @media (min-width: @tablet-width) {
         margin-bottom: 35px;
+    }
+
+    @media (min-width: @tablet-width) {
+        margin-bottom: 60px;
     }
 }
 
@@ -368,11 +390,13 @@
 }
 
 .header__picture {
+    display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: -10px;
+    margin: 0 auto -10px;
+    // margin-bottom: -10px;
 
-    @media (max-width: @tablet-width) {
+    @media (max-width: calc(@tablet-width - 1px)) {
         display: none;
     }
 
