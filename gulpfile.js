@@ -19,7 +19,7 @@ const paths = {
         dest: 'dist/scripts/'
     },
     img: {
-        src: 'src/img/**/*.{jpg, png, svg}',
+        src: 'src/img/**/*.{jpg,png,svg}',
         dest: 'dist/img/'
     }
 };
@@ -65,7 +65,9 @@ function imageCompress() {
     .pipe(imagemin([
         imagemin.mozjpeg({quality: 80}),
         imagemin.optipng({optimizationLevel: 3}),
-        imagemin.svgo()
+        imagemin.svgo({
+            plugins: [{removeViewBox: false}]
+        })
     ]))
     .pipe(gulp.dest(paths.img.dest))
 }

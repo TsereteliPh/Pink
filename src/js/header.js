@@ -6,7 +6,7 @@ const header = document.querySelector('.header'),
 
 nav.classList.remove('header__no-js');
 
-headerButton.addEventListener('click', function() {
+headerButton.addEventListener('click', () => {
     panel.classList.toggle('header__panel--opened');
     svg.forEach((item) => {
         item.classList.toggle('header__js-active');

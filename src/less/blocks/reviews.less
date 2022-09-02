@@ -20,6 +20,20 @@
         justify-content: space-between;
 
         padding-top: 120px;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            left: 50%;
+
+            width: 80px;
+            height: 63px;
+            margin-left: -40px;
+
+            background: url('../img/icon-quotes.svg') no-repeat;
+        }
     }
 }
 
@@ -64,6 +78,10 @@
 .reviews-slider__box {
     display: none;
     margin: 0;
+
+    animation-name: showing;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
 }
 
 .reviews-slider__box--active {
