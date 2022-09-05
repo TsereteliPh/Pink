@@ -4,7 +4,8 @@ const header = document.querySelector('.header'),
       panel = header.querySelector('.header__panel'),
       nav = header.querySelector('.nav');
 
-nav.classList.remove('header__no-js');
+panel.classList.remove('header__panel--opened');
+nav.classList.remove('nav--active');
 
 headerButton.addEventListener('click', () => {
     panel.classList.toggle('header__panel--opened');

@@ -1,0 +1,122 @@
+.footer {
+    margin-top: 40px;
+    padding: 0 20px;
+
+    @media (min-width: @desktop-width) {
+        margin-top: 70px;
+        padding: 0 130px;
+    }
+}
+
+.footer__wrapper {
+    margin-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 75px;
+    }
+}
+
+.footer__logo {
+    width: 145px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    & img {
+        width: 100%;
+    }
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.footer__socials {
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.socials__icon {
+    width: 52px;
+    height: 52px;
+
+    border: 3px solid fade(#283645, 10);
+    border-radius: 50%;
+
+    &:hover {
+        border-color: #283645;
+    }
+
+    &:active {
+        opacity: 0.1;
+    }
+}
+
+.socials__icon--twitter {
+    background: url('../img/icon-twitter.svg') 50% no-repeat;
+}
+
+.socials__icon--facebook {
+    background: url('../img/icon-facebook.svg') 50% no-repeat;
+}
+
+.socials__icon--youtube {
+    background: url('../img/icon-youtube.svg') 50% no-repeat;
+}
+
+.footer__developer {
+    width: 130px;
+    min-height: 34px;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+    }
+}
+
+.dev__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
+}
+
+.dev__text {
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.dev__icon {
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+
+    background: url('../img/htmlacademy.svg') 50% no-repeat;
+}

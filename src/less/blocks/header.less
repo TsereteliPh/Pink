@@ -149,14 +149,6 @@
     }
 }
 
-.header__no-js {
-    display: block;
-
-    @media (min-width: @desktop-width) {
-        display: flex;
-    }
-}
-
 .nav {
     display: none;
     width: 100%;
@@ -213,7 +205,7 @@
     }
 
     @media (min-width: @desktop-width) {
-        width: 15%;
+        width: 16%;
         border: none;
         min-height: 55px;
 
@@ -409,3 +401,57 @@
         margin-top: 100px;
     }
 }
+
+/* Начало стилей для страницы photo.html*/
+
+.header__photo-caption {
+    margin: 0;
+    padding: 35px 0 85px;
+
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        padding: 80px 0 140px;
+
+        font-size: 50px;
+        line-height: 68px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 70px 0 100px;
+    }
+}
+
+/* Конец стилей для страницы photo.html*/
+
+/* Начало стилей для страницы form.html*/
+
+.header__form-caption {
+    margin: 0;
+    padding: 35px 0 50px;
+
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        padding: 80px 0 70px;
+
+        font-size: 50px;
+        line-height: 68px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 750px;
+        margin: 0 auto;
+        padding: 70px 0 100px;
+
+        & br {
+            display: none;
+        }
+    }
+}
+
+/* Конец стилей для страницы form.html*/
