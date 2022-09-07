@@ -46,6 +46,15 @@
         z-index: 1;
 
         width: 100%;
+        max-height: 45px;
         margin-top: -1px;
+
+        @media (min-width: @tablet-width) {
+            max-height: 60px;
+        }
+
+        @media (min-width: @desktop-width) {
+            max-height: 100px;
+        }
     }
 }

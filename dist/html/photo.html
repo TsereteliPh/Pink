@@ -70,8 +70,12 @@
       <section class="gallery">
         <div class="gallery__wrapper">
           <ul class="gallery__list">
-            <li class="gallery__item card card--header">
-              <img class="card__image card__image--header" src="#" alt="Панорама подвесного моста">
+            <li class="gallery__item gallery__item--header card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/panorama-desktop@1x.jpg 1x, ../img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/panorama-tablet@1x.jpg 1x, ../img/panorama-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/panorama-mobile@1x.jpg" srcset="../img/panorama-mobile@2x.jpg 2x" alt="Панорама подвесного моста">
+              </picture>
 
               <div class="card__info-container">
                 <p class="card__author">
@@ -83,15 +87,24 @@
                   Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
 
-                <p class="card__likes">
-                  Нравится:
-                  <span class="card__likes-counter">215</span>
-                </p>
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">215</span>
+                  </p>
+                </button>
               </div>
             </li>
 
             <li class="gallery__item card">
-              <img class="card__image" src="#" alt="Фотография со съемок машины">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-car-desktop@1x.jpg 1x, ../img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-car-tablet@1x.jpg 1x, ../img/photo-car-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-car-mobile@1x.jpg" srcset="../img/photo-car-mobile@2x.jpg 2x" alt="Фотография со съемок машины">
+              </picture>
 
               <div class="card__info-container">
                 <p class="card__author">
@@ -103,15 +116,24 @@
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
 
-                <p class="card__likes">
-                  Нравится:
-                  <span class="card__likes-counter">356</span>
-                </p>
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">356</span>
+                  </p>
+                </button>
               </div>
             </li>
 
             <li class="gallery__item card">
-              <img class="card__image" src="#" alt="Фотография ударной установки">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-drumset-desktop@1x.jpg 1x, ../img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-drumset-tablet@1x.jpg 1x, ../img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-drumset-mobile@1x.jpg" srcset="../img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография ударной установки">
+              </picture>
 
               <div class="card__info-container">
                 <p class="card__author">
@@ -123,15 +145,24 @@
                   Соседи будут рады!
                 </p>
 
-                <p class="card__likes">
-                  Нравится:
-                  <span class="card__likes-counter">666</span>
-                </p>
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">666</span>
+                  </p>
+                </button>
               </div>
             </li>
 
             <li class="gallery__item card">
-              <img class="card__image" src="#" alt="Фотография вида из окна на небо">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-window-desktop@1x.jpg 1x, ../img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-window-tablet@1x.jpg 1x, ../img/photo-window-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-window-mobile@1x.jpg" srcset="../img/photo-window-mobile@2x.jpg 2x" alt="Фотография вида из окна на небо">
+              </picture>
 
               <div class="card__info-container">
                 <p class="card__author">
@@ -143,15 +174,24 @@
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </p>
 
-                <p class="card__likes">
-                  Нравится:
-                  <span class="card__likes-counter">167</span>
-                </p>
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">448</span>
+                  </p>
+                </button>
               </div>
             </li>
 
             <li class="gallery__item card">
-              <img class="card__image" src="#" alt="Фотография Кубанской бахчи">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-fair-desktop@1x.jpg 1x, ../img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-fair-tablet@1x.jpg 1x, ../img/photo-fair-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-fair-mobile@1x.jpg" srcset="../img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Кубанской бахчи">
+              </picture>
 
               <div class="card__info-container">
                 <p class="card__author">
@@ -163,15 +203,24 @@
                   Самая кубанская в мире!
                 </p>
 
-                <p class="card__likes">
-                  Нравится:
-                  <span class="card__likes-counter">4</span>
-                </p>
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">4</span>
+                  </p>
+                </button>
               </div>
             </li>
 
             <li class="gallery__item card">
-              <img class="card__image" src="#" alt="Фотография ног на фоне обрыва">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-pov-desktop@1x.jpg 1x, ../img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-pov-tablet@1x.jpg 1x, ../img/photo-pov-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-pov-mobile@1x.jpg" srcset="../img/photo-pov-mobile@2x.jpg 2x" alt="Фотография ног на фоне обрыва">
+              </picture>
 
               <div class="card__info-container">
                 <p class="card__author">
@@ -183,15 +232,24 @@
                   Где снег-то?
                 </p>
 
-                <p class="card__likes">
-                  Нравится:
-                  <span class="card__likes-counter">150</span>
-                </p>
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">150</span>
+                  </p>
+                </button>
               </div>
             </li>
 
             <li class="gallery__item card">
-              <img class="card__image" src="#" alt="Фотография крыла самолета">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-wing-desktop@1x.jpg 1x, ../img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-wing-tablet@1x.jpg 1x, ../img/photo-wing-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-wing-mobile@1x.jpg" srcset="../img/photo-wing-mobile@2x.jpg 2x" alt="Фотография крыла самолета">
+              </picture>
 
               <div class="card__info-container">
                 <p class="card__author">
@@ -203,10 +261,15 @@
                   Всем GM и взаимные лайки!
                 </p>
 
-                <p class="card__likes">
-                  Нравится:
-                  <span class="card__likes-counter">2560</span>
-                </p>
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">2285</span>
+                  </p>
+                </button>
               </div>
             </li>
           </ul>

@@ -1,0 +1,55 @@
+.top-message {
+    padding: 0 20px;
+
+    @media (min-width: @desktop-width) {
+        padding: 0 130px;
+    }
+}
+
+.top-message__wrapper {
+    margin: 55px 0;
+
+    @media (min-width: @tablet-width) {
+        margin-top: 100px;
+        margin-bottom: 85px;
+    }
+
+    @media (min-width: @tablet-width) {
+        margin: 100px 0;
+    }
+}
+
+.top-message__content {
+    padding: 0 5%;
+    margin: 0;
+
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        padding: 0 10%;
+
+        font-size: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 0 18%;
+    }
+}
+
+/* Начало стилей для страницы form.html */
+
+.top-message__content--form-page {
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+        padding: 0 9%;
+    }
+}
+
+.top-message__request {
+    @media (max-width: calc(@tablet-width - 1px)) {
+        display: none;
+    }
+}
+
+/* Конец стилей для страницы form.html */
