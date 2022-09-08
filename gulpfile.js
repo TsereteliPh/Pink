@@ -50,7 +50,6 @@ function styles() {
 function scripts() {
     return gulp.src(paths.scripts.src)
     .pipe(sourcemap.init())
-    .pipe(concat('main.js'))
     .pipe(gulp.dest(paths.scripts.dest))
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))

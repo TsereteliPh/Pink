@@ -285,29 +285,51 @@
 
       <section class="editor">
         <div class="editor__wrapper">
-          <img class="editor__image" src="#" alt="Фотография загруженная пользователем">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/photo-road-desktop@1x.jpg 1x, ../img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="../img/photo-road-tablet@1x.jpg 1x, ../img/photo-road-tablet@2x.jpg 2x">
+            <img class="editor__image" src="../img/photo-road-mobile@1x.jpg" srcset="../img/photo-road-mobile@2x.jpg 2x" alt="Фотография загруженная пользователем">
+          </picture>
 
-          <form class="editor__form form" method="???">
-            <div class="form__control-panel">
-              <button class="form__control-btn form__control-btn--crop js-active" type="button"></button>
+          <form class="editor__form editor-form" method="???">
+            <div class="editor-form__control-panel">
+              <button class="editor-form__control-btn editor-form__control-btn--active editor-form__control-btn--crop" type="button">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#283645" fill-opacity="0.3"><path fill="none" d="M0 0h48v48H0V0z"/><path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/></svg>
+              </button>
               
-              <button class="form__control-btn form__control-btn--fill" type="button"></button>
+              <button class="editor-form__control-btn editor-form__control-btn--fill" type="button">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#283645" fill-opacity="0.3"><path fill="none" d="M0 0h48v48H0V0z"/><path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/></svg>
+              </button>
               
-              <button class="form__control-btn form__control-btn--contrast" type="button"></button>
+              <button class="editor-form__control-btn editor-form__control-btn--contrast" type="button">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="31.92" height="31.92" viewBox="-35.422 -7.96 31.92 31.92" fill="#283645" fill-opacity="0.3"><path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/><path d="M-19.462 16.331a8.519 8.519 0 008.52-8.52 8.518 8.518 0 00-8.52-8.519"/></svg>
+              </button>
             </div>
 
-            <div class="form__range-wrapper">
-              <input class="form__range form__range--crop js-active" type="range" form="0" to="100" step="1" value="0">
+            <div class="editor-form__range-wrapper">
+              <div class="editor-form__range-container editor-form__range-container--active">
+                <span class="editor-form__icon editor-form__icon--crop"></span>
 
-              <input class="form__range form__range--fill" type="range" form="0" to="100" step="1" value="50">
+                <input class="editor-form__range editor-form__range--crop js-active-input" type="range" form="0" to="100" step="1" value="0">
+              </div>
 
-              <input class="form__range form__range--contrast" type="range" form="0" to="100" step="1" value="50">
+              <div class="editor-form__range-container">
+                <span class="editor-form__icon editor-form__icon--fill"></span>
+
+                <input class="editor-form__range editor-form__range--fill" type="range" form="0" to="100" step="1" value="25">
+              </div>
+
+              <div class="editor-form__range-container">
+                <span class="editor-form__icon editor-form__icon--contrast"></span>
+
+                <input class="editor-form__range editor-form__range--contrast" type="range" form="0" to="100" step="1" value="50">
+              </div>
             </div>
 
-            <div class="form__send-panel">
-              <button class="button form__button form__button--send" type="submit"></button>
+            <div class="editor-form__send-panel">
+              <button class="editor-form__button editor-form__button--send" type="submit">Запостить</button>
               
-              <button class="button form__button form__button--reset" type="reset"></button>
+              <button class="editor-form__button editor-form__button--reset" type="reset">Отмена</button>
             </div>
           </form>
         </div>
@@ -338,6 +360,8 @@
       </div> 
     </footer>
 
-    <script src="../scripts/main.min.js"></script>
+    <script src="../scripts/header.min.js"></script>
+    <script src="../scripts/like-counter.min.js"></script>
+    <script src="../scripts/editor.min.js"></script>
   </body>
 </html>
