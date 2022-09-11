@@ -1946,6 +1946,7 @@
   width: 100%;
   height: 63px;
   padding: 10px 20px;
+  font-family: inherit;
   font-size: 18px;
   color: #283645;
   border: 2px solid #e5e5e5;
@@ -1962,6 +1963,30 @@
 .form__input:invalid {
   color: #d22856;
 }
+.form__button {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background-color: #2aab6d;
+}
+.form__button:hover {
+  background-color: #1c9b5e;
+}
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.form__button:disabled {
+  background-color: #e5e5e5;
+}
+.form__button:disabled:active {
+  color: #ffffff;
+}
 .form__full-name {
   padding: 0 20px 45px;
   width: 100%;
@@ -1970,11 +1995,13 @@
 .form__name {
   margin-bottom: 30px;
 }
-.surname__label,
-.name__label,
-.patronymic__label {
-  display: flex;
-  align-items: center;
+@media (min-width: 660px) {
+  .surname__label,
+  .name__label,
+  .patronymic__label {
+    display: flex;
+    align-items: center;
+  }
 }
 .surname__text,
 .name__text,
@@ -1991,4 +2018,195 @@
     margin-right: 20px;
     padding: 0;
   }
+}
+.form__achievement-wrapper {
+  padding: 0 20px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.achievement {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-top: 40px;
+}
+.achievement__caption {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+}
+@media (min-width: 1200px) {
+  .achievement__input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.achievement__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.achievement__text {
+  display: block;
+  margin-left: 50px;
+  font-size: 18px;
+  line-height: 36px;
+}
+.achievement__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.achievement__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.achievement__input:hover ~ .achievement__text::before {
+  border-color: #283645;
+}
+.achievement__input:active ~ .achievement__text::before {
+  border-color: #d22856;
+}
+.achievement__input:checked ~ .achievement__text::before {
+  background: #ffffff url('../img/icon-yes--pink.svg') no-repeat 50%;
+}
+.form__feedback {
+  width: 100%;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+.feedback {
+  border: none;
+}
+.feedback__caption {
+  display: none;
+}
+.feedback__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.feedback__text {
+  margin-left: 20px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+.form__app-wrapper {
+  padding: 0 20px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.form__app {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.app {
+  border: none;
+}
+.app__caption {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+}
+.app__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.app__label:last-child {
+  margin: 0;
+}
+.app__text {
+  margin-left: 50px;
+  font-size: 18px;
+  line-height: 36px;
+}
+.app__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.app__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.app__input:hover ~ .app__text::before {
+  border-color: #283645;
+}
+.app__input:active ~ .app__text::before {
+  border-color: #d22856;
+}
+.app__input:checked ~ .app__text::before {
+  background: #ffffff url('../img/icon-map-marker.svg') no-repeat 50% / contain;
+}
+.form__message-wrapper {
+  padding: 0 20px;
+  width: 100%;
+}
+.form__message {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.message {
+  border: none;
+}
+.message__caption {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+}
+.message__input {
+  height: 200px;
+  resize: none;
+}
+.form__submit-panel {
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+.panel__button {
+  width: 280px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.panel__message {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.panel__important {
+  color: #d22856;
 }

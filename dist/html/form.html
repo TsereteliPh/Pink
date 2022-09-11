@@ -93,41 +93,63 @@
             </div>
           </div>
 
-          <fieldset class="form__achievement achievement">
-            <legend class="achievement__caption">
-              Ваши безбашенные достижения в путешествии
-            </legend>
+          <div class="form__achievement-wrapper">
+            <fieldset class="form__achievement achievement">
+              <legend class="achievement__caption">
+                Ваши безбашенные<br>
+                достижения в путешествии
+              </legend>
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Сделал селфи с акулой
-            </label>
+              <div class="achievement__input-container">
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Обгорел на пляже
-            </label>
+                  <span class="achievement__text">  Сделал селфи с акулой
+                  </span>
+                </label>
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Видел Чака Норриса
-            </label>
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Накупил сувениров
-            </label>
+                  <span class="achievement__text"> 
+                  Обгорел на пляже
+                  </span>
+                </label>
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Удержал башню
-            </label>
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Разгромил отель
-            </label>
-          </fieldset>
+                  <span class="achievement__text"> 
+                  Видел Чака Норриса
+                  </span>
+                </label>
+
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
+
+                  <span class="achievement__text"> 
+                  Накупил сувениров
+                  </span>
+                </label>
+
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
+
+                  <span class="achievement__text"> 
+                  Удержал башню
+                 </span>
+                </label>
+
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
+
+                  <span class="achievement__text"> 
+                  Разгромил отель
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
 
           <fieldset class="form__feedback feedback">
             <legend class="feedback__caption">
@@ -149,38 +171,50 @@
             </label>
           </fieldset>
 
-          <fieldset class="form__app app">
-            <legend class="app__legend">
-              С каким приложением путешествовали?
-            </legend>
+          <div class="form__app-wrapper">
+            <fieldset class="form__app app">
+              <legend class="app__caption">
+                С каким приложением путешествовали?
+              </legend>
 
-            <label class="app__label">
-              <input class="app__input" type="radio" name="os-name" checked>
-              Pink для iOS
-            </label>
+              <label class="app__label">
+                <input class="app__input" type="radio" name="os-name" checked>
 
-            <label class="app__label">
-              <input class="app__input" type="radio"  name="os-name">
-              Pink на Andriod
-            </label>
+                <span class="app__text">
+                Pink для iOS
+                </span>
+              </label>
 
-            <label class="app__label">
-              <input class="app__input" type="radio" name="os-name">
-              Pink для Windows Phone
-            </label>
-          </fieldset> 
+              <label class="app__label">
+                <input class="app__input" type="radio"  name="os-name">
 
-          <fieldset class="form__message message">
-            <legend class="message__caption">
-              Опишите свои эмоции
-            </legend>
+                <span class="app__text">
+                Pink на Andriod
+                </span>
+              </label>
 
-            <textarea class="form__input message__input">Можно прям в красках, не стесняясь в выражениях
-            </textarea>
-          </fieldset>
+              <label class="app__label">
+                <input class="app__input" type="radio" name="os-name">
+
+                <span class="app__text">
+                Pink для Windows Phone
+                </span>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="form__message-wrapper">
+            <fieldset class="form__message message">
+              <legend class="message__caption">
+                Опишите свои эмоции
+              </legend>
+
+              <textarea class="form__input message__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+          </div>
 
           <div class="form__submit-panel panel">
-            <button class="panel__button" type="submit">Отправить форму</button>
+            <button class="form__button panel__button" type="submit">Отправить форму</button>
 
             <p class="panel__message">
               <span class="panel__important">*</span>
