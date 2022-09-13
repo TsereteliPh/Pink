@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://TsereteliPh.github.io/Pink",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/TsereteliPh/Pink/issues"
   },
-  "homepage": "https://github.com/TsereteliPh/Pink#readme",
   "devDependencies": {
     "del": "^6.1.1",
     "gulp": "^4.0.2",

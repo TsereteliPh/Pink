@@ -1,1 +1,1 @@
-##Личный проект «Пинк»
+## [Демо проекта](https://TsereteliPh.github.io/Pink)
