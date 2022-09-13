@@ -69,19 +69,19 @@
       </section>
       
       <section class="upload-info">
-        <form class="upload-info__form form" action="???">
+        <form class="upload-info__form form" method="get" action="#">
           <div class="form__full-name">
             <div class="form__surname surname">
               <label class="surname__label">
                 <span class="surname__text">Фамилия:</span>
-                <input class="form__input surname__input" type="text" placeholder="Укажите фамилию *" required>
+                <input class="form__input surname__input js-required-input" type="text" placeholder="Укажите фамилию *" required>
               </label>
             </div>
 
             <div class="form__name name">
               <label class="name__label">
                 <span class="name__text">Имя:</span>
-                <input class="form__input name__input" type="text" placeholder="Укажите имя *" required>
+                <input class="form__input name__input js-required-input" type="text" placeholder="Укажите имя *" required>
               </label>
             </div>
 
@@ -151,25 +151,27 @@
             </fieldset>
           </div>
 
-          <fieldset class="form__feedback feedback">
-            <legend class="feedback__caption">
-              Контактная информация
-            </legend>
+          <div class="form__feedback-wrapper">
+            <fieldset class="form__feedback feedback">
+              <legend class="feedback__caption">
+                Контактная информация
+              </legend>
 
-            <label class="feedback__label">
-              <span class="feedback__text">
-                Номер телефона
-              </span>
-              <input class="form__input feedback__number feedback__number--phone-icon" type="tel" placeholder="Номер, пожалуйста">
-            </label>
+              <label class="feedback__label feedback__label--number">
+                <span class="feedback__text">
+                  Номер телефона
+                </span>
+                <input class="form__input feedback__number" type="tel" placeholder="Номер, пожалуйста">
+              </label>
 
-            <label class="feedback__label">
-              <span class="feedback__text">
-                Адрес почты
-              </span>
-              <input class="form__input feedback__email feedback__email--mail-icon" type="email" placeholder="Введите почту *" required>
-            </label>
-          </fieldset>
+              <label class="feedback__label feedback__label--email">
+                <span class="feedback__text">
+                  Адрес почты
+                </span>
+                <input class="form__input feedback__email js-required-input" type="email" placeholder="Введите почту *" required>
+              </label>
+            </fieldset>
+          </div>
 
           <div class="form__app-wrapper">
             <fieldset class="form__app app">
@@ -189,7 +191,7 @@
                 <input class="app__input" type="radio"  name="os-name">
 
                 <span class="app__text">
-                Pink на Andriod
+                Pink для Andriod
                 </span>
               </label>
 
@@ -259,8 +261,8 @@
         </p>
       </div>
 
-      <div class="modal__button-container">
-        <button class="modal__button modal__button--failure" type="button">Ок</button>
+      <div class="modal__button-container modal__button-container--failure">
+        <button class="form__button modal__button modal__button--failure" type="button">Ок</button>
       </div>
     </section>
 
@@ -275,11 +277,12 @@
         </p>
       </div>
 
-      <div class="modal__button-container">
-        <button class="modal__button modal__button--succes" type="button">Закрыть окно</button>
+      <div class="modal__button-container moda modal__button-container--succes">
+        <button class="form__button modal__button modal__button--succes" type="button">Закрыть окно</button>
       </div>
     </section>
 
     <script src="../scripts/header.min.js"></script>
+    <script src="../scripts/modal.min.js"></script>
   </body>
 </html>

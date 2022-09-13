@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.min.css">
     <title>Pink</title>
   </head>
 
@@ -10,153 +11,212 @@
     <header class="header">
       <h1 class="visually-hidden">Сайт для размещения и редактирования фотографий - Pink</h1>
 
-      <div class="header__wrapper">
-        <div class="header__panel">
-          <div class="header__logos">
-            <img class="header__logo header__logo--mobile" src="#" alt="Логотип сайта">
-            <img class="header__logo header__logo--tablet" src="#" alt="Логотип сайта">
-            <img class="header__logo header__logo--desktop" src="#" alt="Логотип сайта">
+      <div class="header__bg-wrapper">
+        <div class="header__wrapper">
+          <div class="header__panel header__panel--opened">
+            <div class="header__logos">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
+                <img class="header__logo header__logo--mobile" src="../img/logo-pink-white-mobile.svg" alt="Логотип сайта">
+              </picture>
+            </div>
+
+            <button class="header__button js-burger-btn" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+
+              <svg class="header__button-svg header__js-active" version="1.0" xmlns="http://www.w3.org/2000/svg" width="49.945" height="24.007" viewBox="0 0 49.945 24.007">
+                <g>
+                  <g>
+                    <g>
+                      <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                    </g>
+                    <g>
+                      <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+              <svg class="header__button-svg" xmlns="http://www.w3.org/2000/svg" width="23.867" height="23.867" viewBox="0 0 23.867 23.867">
+                <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+              </svg>
+            </button>
           </div>
 
-          <button class="header__button js-burger-btn" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <nav class="header__navigation nav nav--active">
+            <a class="nav__link" href="./index.html"><span>Главная</span></a>
+            <a class="nav__link" href="./photo.html"><span>Фотографии</span></a>
+            <a class="nav__link nav__link--current"><span>Конкурс</span></a>
+          </nav>
         </div>
 
-        <nav class="header__navigation nav">
-          <a class="nav__link" href="./index.html">Главная</a>
-          <a class="nav__link" href="./photo.html">Фотографии</a>
-          <a class="nav__link nav__link--current">Конкурс</a>
-        </nav>
+        <h2 class="header__form-caption">
+          Конкурс на самое<br>
+          безбашенное<br>
+          путешествие с Пинк
+        </h2>
       </div>
-
-      <h2 class="header__caption">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h2>
     </header>
 
     <main class="page__main">
       <section class="top-message">
         <div class="top-message__wrapper">
-          <p class="top-message__content">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <p class="top-message__content top-message__content--form-page">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="top-message__request"> Пожалуйста, заполните форму ниже:</span>
           </p>
         </div>
       </section>
       
-      <section class="upload-info" action="???">
-        <form class="upload-info__form form">
+      <section class="upload-info">
+        <form class="upload-info__form form" method="get" action="#">
           <div class="form__full-name">
             <div class="form__surname surname">
               <label class="surname__label">
                 <span class="surname__text">Фамилия:</span>
-                <input class="surname__input" type="text" placeholder="Укажите фамилию *" required>
+                <input class="form__input surname__input js-required-input" type="text" placeholder="Укажите фамилию *" required>
               </label>
             </div>
 
             <div class="form__name name">
               <label class="name__label">
                 <span class="name__text">Имя:</span>
-                <input class="name__input" type="text" placeholder="Укажите имя *" required>
+                <input class="form__input name__input js-required-input" type="text" placeholder="Укажите имя *" required>
               </label>
             </div>
 
             <div class="form__patronymic patronymic">
               <label class="patronymic__label">
                 <span class="patronymic__text">Отчество:</span>
-                <input class="patronymic__input" type="text" placeholder="Ну и отчество тоже">
+                <input class="form__input patronymic__input" type="text" placeholder="Ну и отчество тоже">
               </label>
             </div>
           </div>
 
-          <fieldset class="form__achievement achievement">
-            <legend class="achievement__caption">
-              Ваши безбашенные достижения в путешествии
-            </legend>
+          <div class="form__achievement-wrapper">
+            <fieldset class="form__achievement achievement">
+              <legend class="achievement__caption">
+                Ваши безбашенные<br>
+                достижения в путешествии
+              </legend>
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Сделал селфи с акулой
-            </label>
+              <div class="achievement__input-container">
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Обгорел на пляже
-            </label>
+                  <span class="achievement__text">  Сделал селфи с акулой
+                  </span>
+                </label>
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Видел Чака Норриса
-            </label>
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Накупил сувениров
-            </label>
+                  <span class="achievement__text"> 
+                  Обгорел на пляже
+                  </span>
+                </label>
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Удержал башню
-            </label>
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
 
-            <label class="achievement__label">
-              <input type="checkbox" class="achievement__input">
-              Разгромил отель
-            </label>
-          </fieldset>
+                  <span class="achievement__text"> 
+                  Видел Чака Норриса
+                  </span>
+                </label>
 
-          <fieldset class="form__feedback feedback">
-            <legend class="feedback__caption">
-              Контактная информация
-            </legend>
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
 
-            <label class="feedback__label">
-              <span class="feedback__text">
-                Номер телефона
-              </span>
-              <input class="feedback__number feedback__number--phone-icon" type="tel" placeholder="Номер, пожалуйста">
-            </label>
+                  <span class="achievement__text"> 
+                  Накупил сувениров
+                  </span>
+                </label>
 
-            <label class="feedback__label">
-              <span class="feedback__text">
-                Адрес почты
-              </span>
-              <input class="feedback__email feedback__email--mail-icon" type="email" placeholder="Введите почту *" required>
-            </label>
-          </fieldset>
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
 
-          <fieldset class="form__app app">
-            <legend class="app__legend">
-              С каким приложением путешествовали?
-            </legend>
+                  <span class="achievement__text"> 
+                  Удержал башню
+                 </span>
+                </label>
 
-            <label class="app__label">
-              <input class="app__input" type="radio" name="os-name" checked>
-              Pink для iOS
-            </label>
+                <label class="achievement__label">
+                  <input type="checkbox" class="achievement__input">
 
-            <label class="app__label">
-              <input class="app__input" type="radio"  name="os-name">
-              Pink на Andriod
-            </label>
+                  <span class="achievement__text"> 
+                  Разгромил отель
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
 
-            <label class="app__label">
-              <input class="app__input" type="radio" name="os-name">
-              Pink для Windows Phone
-            </label>
-          </fieldset> 
+          <div class="form__feedback-wrapper">
+            <fieldset class="form__feedback feedback">
+              <legend class="feedback__caption">
+                Контактная информация
+              </legend>
 
-          <fieldset class="form__message message">
-            <legend class="message__caption">
-              Опишите свои эмоции
-            </legend>
+              <label class="feedback__label feedback__label--number">
+                <span class="feedback__text">
+                  Номер телефона
+                </span>
+                <input class="form__input feedback__number" type="tel" placeholder="Номер, пожалуйста">
+              </label>
 
-            <textarea class="message__input">Можно прям в красках, не стесняясь в выражениях
-            </textarea>
-          </fieldset>
+              <label class="feedback__label feedback__label--email">
+                <span class="feedback__text">
+                  Адрес почты
+                </span>
+                <input class="form__input feedback__email js-required-input" type="email" placeholder="Введите почту *" required>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="form__app-wrapper">
+            <fieldset class="form__app app">
+              <legend class="app__caption">
+                С каким приложением путешествовали?
+              </legend>
+
+              <label class="app__label">
+                <input class="app__input" type="radio" name="os-name" checked>
+
+                <span class="app__text">
+                Pink для iOS
+                </span>
+              </label>
+
+              <label class="app__label">
+                <input class="app__input" type="radio"  name="os-name">
+
+                <span class="app__text">
+                Pink для Andriod
+                </span>
+              </label>
+
+              <label class="app__label">
+                <input class="app__input" type="radio" name="os-name">
+
+                <span class="app__text">
+                Pink для Windows Phone
+                </span>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="form__message-wrapper">
+            <fieldset class="form__message message">
+              <legend class="message__caption">
+                Опишите свои эмоции
+              </legend>
+
+              <textarea class="form__input message__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+          </div>
 
           <div class="form__submit-panel panel">
-            <button class="panel__button" type="submit">Отправить форму</button>
+            <button class="form__button panel__button" type="submit">Отправить форму</button>
 
             <p class="panel__message">
               <span class="panel__important">*</span>
@@ -169,22 +229,60 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__logo" href="./index.html">
-          <img class="footer__logo-pic" src="#" alt="Логотип Pink">
-        </a>
+        <div class="footer__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/logo-pink-blue-desktop.svg">
+            <img class="footer__logo-pic" src="../img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+          </picture>
+        </div>
 
         <div class="footer__socials socials">
-          <span class="socials__icon socials__icon--twitter"></span>
-          <span class="socials__icon socials__icon--facebook"></span>
-          <span class="socials__icon socials__icon--youtube"></span>
+          <a href="#" class="socials__icon socials__icon--twitter"></a>
+          <a href="#" class="socials__icon socials__icon--facebook"></a>
+          <a href="#" class="socials__icon socials__icon--youtube"></a>
         </div>
 
         <div class="footer__developer dev">
-          <a href="" class="dev__text">Разработано
+          <a href="#" class="dev__link">
+            <span class="dev__text">Разработано</span>
             <span class="dev__icon"></span>
           </a>
         </div>
       </div> 
     </footer>
+
+    <section class="modal modal--failure">
+      <div class="modal__message">
+        <h1 class="modal__caption">Что-то пошло не так!</h1>
+
+        <p class="modal__text">
+          Проверьте поля, выделенные красным,<br>
+          скорее всего вы забыли их заполнить
+        </p>
+      </div>
+
+      <div class="modal__button-container modal__button-container--failure">
+        <button class="form__button modal__button modal__button--failure" type="button">Ок</button>
+      </div>
+    </section>
+
+    <section class="modal modal--succes">
+      <div class="modal__message">
+        <h1 class="modal__caption">Ваша заявка отправлена</h1>
+
+        <p class="modal__text">
+          Спасибо за ваше участие, ваша заявка уже<br>
+          поступила к нам. В ближайшее время мы<br>
+          рассмотрим ее и оповестим вас.
+        </p>
+      </div>
+
+      <div class="modal__button-container moda modal__button-container--succes">
+        <button class="form__button modal__button modal__button--succes" type="button">Закрыть окно</button>
+      </div>
+    </section>
+
+    <script src="../scripts/header.min.js"></script>
+    <script src="../scripts/modal.min.js"></script>
   </body>
 </html>
