@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <title>Pink</title>
+  </head>
+
+  <body class="page__body">
+    <header class="header">
+      <h1 class="visually-hidden">Сайт для размещения и редактирования фотографий - Pink</h1>
+
+      <div class="header__bg-wrapper">
+        <div class="header__wrapper">
+          <div class="header__panel header__panel--opened">
+            <div class="header__logos">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
+                <img class="header__logo header__logo--mobile" src="../img/logo-pink-white-mobile.svg" alt="Логотип сайта">
+              </picture>
+            </div>
+
+            <button class="header__button js-burger-btn" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+
+              <svg class="header__button-svg header__js-active" version="1.0" xmlns="http://www.w3.org/2000/svg" width="49.945" height="24.007" viewBox="0 0 49.945 24.007">
+                <g>
+                  <g>
+                    <g>
+                      <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                    </g>
+                    <g>
+                      <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+              <svg class="header__button-svg" xmlns="http://www.w3.org/2000/svg" width="23.867" height="23.867" viewBox="0 0 23.867 23.867">
+                <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+              </svg>
+            </button>
+          </div>
+
+          <nav class="header__navigation nav nav--active">
+            <a class="nav__link" href="./index.html"><span>Главная</span></a>
+            <a class="nav__link nav__link--current"><span>Фотографии</span></a>
+            <a class="nav__link" href="./form.html"><span>Конкурс</span></a>
+          </nav>
+        </div>
+
+        <h2 class="header__photo-caption">
+          Фотографии<br>
+          пользователей
+        </h2>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <section class="top-message">
+        <div class="top-message__wrapper">
+          <p class="top-message__content">
+            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__wrapper">
+          <ul class="gallery__list">
+            <li class="gallery__item gallery__item--header card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/panorama-desktop@1x.jpg 1x, ../img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/panorama-tablet@1x.jpg 1x, ../img/panorama-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/panorama-mobile@1x.jpg" srcset="../img/panorama-mobile@2x.jpg 2x" alt="Панорама подвесного моста">
+              </picture>
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Анна
+                  <span class="card__time">(5 минут назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">215</span>
+                  </p>
+                </button>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-car-desktop@1x.jpg 1x, ../img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-car-tablet@1x.jpg 1x, ../img/photo-car-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-car-mobile@1x.jpg" srcset="../img/photo-car-mobile@2x.jpg 2x" alt="Фотография со съемок машины">
+              </picture>
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Левон
+                  <span class="card__time">(5 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">356</span>
+                  </p>
+                </button>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-drumset-desktop@1x.jpg 1x, ../img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-drumset-tablet@1x.jpg 1x, ../img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-drumset-mobile@1x.jpg" srcset="../img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография ударной установки">
+              </picture>
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Антон
+                  <span class="card__time">(12 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Соседи будут рады!
+                </p>
+
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">666</span>
+                  </p>
+                </button>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-window-desktop@1x.jpg 1x, ../img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-window-tablet@1x.jpg 1x, ../img/photo-window-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-window-mobile@1x.jpg" srcset="../img/photo-window-mobile@2x.jpg 2x" alt="Фотография вида из окна на небо">
+              </picture>
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Борис
+                  <span class="card__time">(20 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">448</span>
+                  </p>
+                </button>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-fair-desktop@1x.jpg 1x, ../img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-fair-tablet@1x.jpg 1x, ../img/photo-fair-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-fair-mobile@1x.jpg" srcset="../img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Кубанской бахчи">
+              </picture>
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Сергей
+                  <span class="card__time">(25 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Самая кубанская в мире!
+                </p>
+
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">4</span>
+                  </p>
+                </button>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-pov-desktop@1x.jpg 1x, ../img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-pov-tablet@1x.jpg 1x, ../img/photo-pov-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-pov-mobile@1x.jpg" srcset="../img/photo-pov-mobile@2x.jpg 2x" alt="Фотография ног на фоне обрыва">
+              </picture>
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Максим
+                  <span class="card__time">(40 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Где снег-то?
+                </p>
+
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">150</span>
+                  </p>
+                </button>
+              </div>
+            </li>
+
+            <li class="gallery__item card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-wing-desktop@1x.jpg 1x, ../img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="../img/photo-wing-tablet@1x.jpg 1x, ../img/photo-wing-tablet@2x.jpg 2x">
+                <img class="card__image" src="../img/photo-wing-mobile@1x.jpg" srcset="../img/photo-wing-mobile@2x.jpg 2x" alt="Фотография крыла самолета">
+              </picture>
+
+              <div class="card__info-container">
+                <p class="card__author">
+                  Надежда
+                  <span class="card__time">(45 часов назад)</span>
+                </p>
+
+                <p class="card__message">
+                  Всем GM и взаимные лайки!
+                </p>
+
+                <button class="card__like-button like-button">
+                  <img class="like-button__heart like-button__heart--active" src="../img/icon-heart.svg" width="13" height="12">
+                  <img class="like-button__heart" src="../img/icon-heart-active.svg" width="13" height="12">
+
+                  <p class="like-button__text">
+                    Нравится:
+                    <span class="like-button__counter">2285</span>
+                  </p>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main-message">
+        <p class="main-message__text">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </section>
+
+      <section class="editor">
+        <div class="editor__wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/photo-road-desktop@1x.jpg 1x, ../img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="../img/photo-road-tablet@1x.jpg 1x, ../img/photo-road-tablet@2x.jpg 2x">
+            <img class="editor__image" src="../img/photo-road-mobile@1x.jpg" srcset="../img/photo-road-mobile@2x.jpg 2x" alt="Фотография загруженная пользователем">
+          </picture>
+
+          <form class="editor__form editor-form" method="???">
+            <div class="editor-form__control-panel">
+              <button class="editor-form__control-btn editor-form__control-btn--active editor-form__control-btn--crop" type="button">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#283645" fill-opacity="0.3"><path fill="none" d="M0 0h48v48H0V0z"/><path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/></svg>
+              </button>
+              
+              <button class="editor-form__control-btn editor-form__control-btn--fill" type="button">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#283645" fill-opacity="0.3"><path fill="none" d="M0 0h48v48H0V0z"/><path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/></svg>
+              </button>
+              
+              <button class="editor-form__control-btn editor-form__control-btn--contrast" type="button">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="31.92" height="31.92" viewBox="-35.422 -7.96 31.92 31.92" fill="#283645" fill-opacity="0.3"><path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/><path d="M-19.462 16.331a8.519 8.519 0 008.52-8.52 8.518 8.518 0 00-8.52-8.519"/></svg>
+              </button>
+            </div>
+
+            <div class="editor-form__range-wrapper">
+              <div class="editor-form__range-container editor-form__range-container--active">
+                <span class="editor-form__icon editor-form__icon--crop"></span>
+
+                <input class="editor-form__range editor-form__range--crop js-active-input" type="range" form="0" to="100" step="1" value="0">
+              </div>
+
+              <div class="editor-form__range-container">
+                <span class="editor-form__icon editor-form__icon--fill"></span>
+
+                <input class="editor-form__range editor-form__range--fill" type="range" form="0" to="100" step="1" value="25">
+              </div>
+
+              <div class="editor-form__range-container">
+                <span class="editor-form__icon editor-form__icon--contrast"></span>
+
+                <input class="editor-form__range editor-form__range--contrast" type="range" form="0" to="100" step="1" value="50">
+              </div>
+            </div>
+
+            <div class="editor-form__send-panel">
+              <button class="editor-form__button editor-form__button--send" type="submit">Запостить</button>
+              
+              <button class="editor-form__button editor-form__button--reset" type="reset">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/logo-pink-blue-desktop.svg">
+            <img class="footer__logo-pic" src="../img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+          </picture>
+        </div>
+
+        <div class="footer__socials socials">
+          <a href="#" class="socials__icon socials__icon--twitter"></a>
+          <a href="#" class="socials__icon socials__icon--facebook"></a>
+          <a href="#" class="socials__icon socials__icon--youtube"></a>
+        </div>
+
+        <div class="footer__developer dev">
+          <a href="#" class="dev__link">
+            <span class="dev__text">Разработано</span>
+            <span class="dev__icon"></span>
+          </a>
+        </div>
+      </div> 
+    </footer>
+
+    <script src="../scripts/header.min.js"></script>
+    <script src="../scripts/like-counter.min.js"></script>
+    <script src="../scripts/editor.min.js"></script>
+  </body>
+</html>
