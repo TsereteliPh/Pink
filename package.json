@@ -6,7 +6,7 @@
   "homepage": "https://TsereteliPh.github.io/Pink",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d dist/html"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
